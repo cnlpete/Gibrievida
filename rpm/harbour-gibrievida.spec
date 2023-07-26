@@ -32,7 +32,7 @@ BuildRequires:  pkgconfig(Qt5Sensors)
 BuildRequires:  pkgconfig(Qt5Positioning)
 BuildRequires:  pkgconfig(sailfishsilica)
 BuildRequires:  desktop-file-utils
-BuildRequires:  sqlite3
+BuildRequires:  pkgconfig(sqlite3)
 
 
 %description
