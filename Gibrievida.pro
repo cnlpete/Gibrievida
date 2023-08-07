@@ -9,3 +9,6 @@ DISTFILES += \
 
 SUBDIRS += \
     sailfishos
+
+OTHER_FILES += \
+    .github/workflows/main.yml

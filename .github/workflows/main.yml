@@ -15,12 +15,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Install incscape and zopfli
+      run: sudo apt-get install -y incscape zopfli
+
     - uses: actions/checkout@v2
       with:
         submodules: true
 
     - name: Prepare
       run: mkdir output
+
+    - name: app icons
+      run: cd sailfishos && ./createAppIcons.sh
 
     - name: Build armv7hl
       id: build_armv7hl
